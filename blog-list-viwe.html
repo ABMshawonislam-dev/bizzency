@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themesitem.com/demos/html/bizzency/bizzency/blog-list-viwe.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Feb 2020 09:58:23 GMT -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bizzency</title>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/venobox.css">
+	<link rel="stylesheet" href="css/jquery.lineProgressbar.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+	<!--==================== 
+    header-top part start 
+ ==================== -->
+	<section id="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 p-0 col-md-6 text-left t-c">
+					<span class="wel">Welcome to our Company</span>
+				</div>
+				<div class="col-lg-6 col-md-6 text-right t-c">
+					<span class="wel"> Opening Hour: 08:00 a.m to 10:00 p.m</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--==================== 
+    header-top part end
+  ==================== -->
+
+	<!--==================== 
+    navbar-part start
+  ==================== -->
+	<nav class="navbar navbar-expand-lg menu">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="logo" class="img-fluid">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto serch-box">
+        <li class="nav-item">
+          <a class="nav-link active" href="#banner-part">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about-part">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service-part">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#protfolio-part">Protfolio</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Blog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Graphics Design</a>
+            <a class="dropdown-item" href="#">Web Design</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#footer-part">Contact</a>
+          </li>
+          </ul>
+          <ul class="icon none">
+                <!-- <li> <i class="fas fa-bars"></i></li> -->
+                <li class="bar sch">
+                  <i class="fas fa-bars nav_bar"></i>
+                  <!-- <span  >&#9776;</span> -->
+                </li>
+                <li class="searh"><i class="fas fa-search"></i></li>
+          </ul>
+    </div>
+    </div>
+  </nav>
+	<!--==================== 
+    navbar-part end
+  ==================== -->
+
+	<!--==================== 
+    search-part start
+  ==================== -->
+	<section id="search">
+		<div class="srch-box" id="myOverlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close">×</span>
+			<form>
+				<input type="search" placeholder="Search by keyword">
+				<button type="submit">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+		</div>
+	</section>
+	<!--==================== 
+    search-part end
+  ==================== -->
+
+	<!--==================== 
+    blogbanner-part start
+  ==================== -->
+	<section id="aboutus-banner">
+		<div class="container text-center">
+			<h1>Blog List View</h1>
+			<p>Home <i class="fas fa-angle-right"></i>Blog List View</p>
+		</div>
+
+	</section>
+	<!--==================== 
+     blogbanner-part end
+  ==================== -->
+
+
+	<!--==================== 
+     pagination-part start
+  ==================== -->
+	<section id="pagination-part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-sm-6 t-c">
+					<a href="blog-grid.html" class="bar">
+						<i class="fas fa-th"></i>
+
+					</a>
+					<a href="blog-list-viwe.html" class="bar active">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
+				<div class="col-lg-6 col-sm-6">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#">page:</a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link active" href="#">33</a></li>
+							<li class="page-item"><a class="page-link" href="#">34</a></li>
+							<li class="page-item page-itemr"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+							<li class="srch"><i class="fas fa-search"></i>
+								<form>
+								  <input type="search" placeholder="Search" class="search-box">
+								</form>
+								</li>
+						</ul>
+
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--==================== 
+     pagination-part end
+  ==================== -->
+
+	<!--==================== 
+    blog-part start
+  ==================== -->
+	<section id="blog-part" class="mb-t">
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 p-0 p-l">
+					<div class="blog-item blog-list">
+						<div class="blog-img blog-list-img">
+							<img src="images/blog-list-img1.png" alt="blog-img1">
+						</div>
+						<div class="blog-details">
+							<p class="date">26 October 2018</p>
+							<p class="tips">You will not get any option to blame us for our work</p>
+							<p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, dmod tempor incididunt ut labore et dolore magna aliqua. Ut enimd minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<a href="#">read more<i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+					<div class="blog-item blog-list">
+						<div class="blog-img blog-list-img">
+							<img src="images/blog-list-img2.png" alt="blog-img1">
+						</div>
+						<div class="blog-details">
+							<p class="date">26 October 2018</p>
+							<p class="tips">You will not get any option to blame us for our work</p>
+							<p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, dmod tempor incididunt ut labore et dolore magna aliqua. Ut enimd minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<a href="#">read more<i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+					<div class="blog-item blog-list">
+						<div class="blog-img blog-list-img">
+							<img src="images/blog-list-img3.png" alt="blog-img1">
+						</div>
+						<div class="blog-details">
+							<p class="date">26 October 2018</p>
+							<p class="tips">You will not get any option to blame us for our work</p>
+							<p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, dmod tempor incididunt ut labore et dolore magna aliqua. Ut enimd minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<a href="#">read more<i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+					<div class="blog-item blog-list">
+						<div class="blog-img blog-list-img">
+							<img src="images/blog-list-img4.png" alt="blog-img1">
+						</div>
+						<div class="blog-details">
+							<p class="date">26 October 2018</p>
+							<p class="tips">You will not get any option to blame us for our work</p>
+							<p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, dmod tempor incididunt ut labore et dolore magna aliqua. Ut enimd minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<a href="#">read more<i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4 p-0">
+					<div class="categori">
+						<h3>Categories</h3>
+						<ul>
+							<li>Web Template Design <span>13</span></li>
+							<li>Brochure Design <span>23</span></li>
+							<li>Flyer Design <span>33</span></li>
+							<li>Business Card Design <span>43</span></li>
+							<li>Banner Design <span>53</span></li>
+							<li>Logo Design <span>63</span></li>
+						</ul>
+					</div>
+
+					<div class="popular">
+						<nav>
+							<div class="nav nav-tabs" id="nav-tab" role="tablist">
+								<a class="nav-item nav-link active pl-0" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Popular  </a>
+								<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">  Recent</a>
+								<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Latest</a>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+								<div class="popular-item">
+									<div class="popular-item-img">
+										<img src="images/tab-img1.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+								<div class="popular-item">
+									<div class="popular-item-img">
+										<img src="images/tab-img2.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+								<div class="popular-item popular-item2">
+									<div class="popular-item-img">
+										<img src="images/tab-img3.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+								<div class="popular-item">
+									<div class="popular-item-img">
+										<img src="images/tab-img3.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+								<div class="popular-item">
+									<div class="popular-item-img">
+										<img src="images/tab-img1.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+								<div class="popular-item popular-item2">
+									<div class="popular-item-img">
+										<img src="images/tab-img2.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+								<div class="popular-item">
+									<div class="popular-item-img">
+										<img src="images/tab-img2.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+								<div class="popular-item">
+									<div class="popular-item-img">
+										<img src="images/tab-img3.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+								<div class="popular-item popular-item2">
+									<div class="popular-item-img">
+										<img src="images/tab-img1.png" alt="tab-img1">
+										<div class="overlay">
+											<a href="#"><i class="fas fa-link"></i></a>
+										</div>
+									</div>
+									<div class="popular-item-text">
+										<h3><a href="#">We can rise your agency on a top rank via SEO</a></h3>
+										<span><i class="far fa-thumbs-up"></i>2.5K Likes </span>
+										<span><i class="far fa-comments"></i>1.5K Comments </span>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tag">
+						<h3>Tags</h3>
+						<a href="#">Fashion</a>
+						<a href="#">Furniture</a>
+						<a href="#">Sports</a>
+						<a href="#">Health</a>
+						<a href="#">Food</a>
+						<a href="#">Electronics</a>
+						<a href="#">Fitness</a>
+						<a href="#">Beauty</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--==================== 
+      blog-part end
+    ==================== -->
+
+
+	<!--==================== 
+     pagination-part start
+  ==================== -->
+	<section id="pagination-bottom-part" class="pagination-part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#">page:</a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link active" href="#">33</a></li>
+							<li class="page-item"><a class="page-link" href="#">34</a></li>
+							<li class="page-item page-itemr"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--==================== 
+       pagination-part end
+    ==================== -->
+
+
+
+
+
+
+
+
+
+
+	<!--==================== 
+    footer-part start
+  ==================== -->
+  <section id="footer-part">
+	<a href="#" class="back-to-top">
+		<i class="fas fa-angle-up"></i>
+	</a>
+	<div class="container p-0">
+	  <div class="row">
+		<div class="col-lg-3 col-sm-6 col-md-6 p-l pl-0">
+		  <a href="#">
+			<img src="images/footer-logo.png" alt="footer-logo">
+		  </a>
+		  <p class="ftr-details">
+			Lorem Ipsum is simply dummy text ofing and typesetting industry. Lorem Ipsuasn the industry's standard dummy text ever since the 1500s. Lorem ipsum dolor sit amet, consectetur.
+		  </p>
+		  <ul class="footer-icon">
+			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+			<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+			<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+		  </ul>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-md-6 pr-0">
+		  <h3>Contact Us</h3>
+		  <ul class="contact">
+			<li><i class="fas fa-map-marker-alt"></i></li>
+			<li>1234, Park Street Avenue, NewYork
+			  America.</li>
+		  </ul>
+		  <ul class="contact">
+			<li><i class="far fa-envelope"></i></li>
+			<li>information@adminrosui.com
+			  helptotal@adminrosui.com</li>
+		  </ul>
+		  <ul class="contact">
+			<li><i class="fas fa-phone"></i></li>
+			<li class="no">+880 1234 5678
+			  +880 9876 5432</li>
+		  </ul>
+		</div>
+		<div class="col-lg-2 col-sm-4 col-md-6 m-t">
+		  <h3>Important Links</h3>
+		  <ul class="link">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about-us.html">About us</a></li>
+			<li><a href="our-service.html">Our Services</a></li>
+			<li><a href="Our-protfolio.html">Our Portfolio</a></li>
+			<li><a href="#footer-part">Contact us</a></li>
+		  </ul>
+		</div>
+		<div class="col-lg-4 col-sm-8 col-md-6 m-t p-0">
+		  <h3>Filckr Stream</h3>
+		  <ul class="footer-img">
+			<li><img class="img-fluid" src="images/footer-img1.png" alt="footer-img1"></li>
+			<li><img class="img-fluid" src="images/footer-img2.png" alt="footer-img2"></li>
+			<li><img class="img-fluid" src="images/footer-img3.png" alt="footer-img3"></li>
+			<li class="m-r"><img class="img-fluid" src="images/footer-img4.png" alt="footer-img4"></li>
+			<li><img class="img-fluid" src="images/footer-img5.png" alt="footer-img5"></li>
+			<li><img class="img-fluid" src="images/footer-img8.png" alt="footer-img8"></li>
+			<li><img class="img-fluid" src="images/footer-img7.png" alt="footer-img7"></li>
+			<li class="m-r"><img class="img-fluid" src="images/footer-img6.png" alt="footer-img6"></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  </section>
+	<!--==================== 
+    footer-part end
+  ==================== -->
+
+	<!--==================== 
+    footerbottom-part start
+  ==================== -->
+	<section id="footer-bottom">
+		<div class="container text-center">
+			<div class="row">
+				<ul>
+					<li>Copyright 2018 <span>BIZZENCY</span> </li>
+					<li>All Rights Reserved</li>
+					<li>Designed By <span>DESIGNER</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!--==================== 
+    footerbottom-part end
+  ==================== -->
+
+
+
+
+
+
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/venobox.min.js"></script>
+	<script src="js/jquery.lineProgressbar.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+
+<!-- Mirrored from themesitem.com/demos/html/bizzency/bizzency/blog-list-viwe.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Feb 2020 09:58:31 GMT -->
+</html>
